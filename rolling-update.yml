@@ -20,9 +20,8 @@ spec:
         project: qsk-book
     spec: 
       containers:
-      - name: qsk-pod
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8080
-        image: nigelpoulton/qsk-book:1.1
-
+        - name: qsk-pod
+          image: nigelpoulton/qsk-book:1.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
